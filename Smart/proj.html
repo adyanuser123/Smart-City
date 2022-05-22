@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Cities</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="zu.png">
+</head>
+<body>
+    <section class="landing" >
+        <div class="circle"></div>
+        <header>
+        <a href="" class="logo"><img src=""></a>
+        <div class="toggle" onclick="toggleMenu()"><img src=></div>
+  
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just a city <br> It's a <span>Smart City</span></h2>
+                <p> A smart city is a technologically modern area that uses modern methods to improve efficiency and quality of lifestyle and uses electronic methods to collect and manage data. Click Learn More to know more and click on the images below to view some cool graphics.</p>
+                <a href="sus.html">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="zu.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="zu.png" onclick="imgSlider('zu.png');changeCircleColor('#232323')"></li>
+            <li><img src="sus.png" onclick="imgSlider('sus.png');changeCircleColor('#232323')"></li>
+            <li><img src="sussy.png" onclick="imgSlider('sussy.png');changeCircleColor('#232323')"></li>
+
+        </ul>
+        <ul class="sci">
+            <li><img src="facebook.png"></li>
+            <li><img src="twitter.png"></li>
+            <li><img src="instagram.png"></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var nav = document.querySelector('.nav');
+            menuToggle.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
